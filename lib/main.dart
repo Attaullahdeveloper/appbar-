@@ -256,14 +256,10 @@ class myapp extends StatelessWidget {
               ),
               SizedBox(height: 10,),
               Divider(
-                thickness: 5,
-                color: Colors.pink,
+                thickness: 2,
+                color: Colors.grey,
               ),
-              // Container(// for first line--------
-              //   height: 3,
-              //   width: 1510,
-              //   color: Colors.grey,
-              // ),
+
               SizedBox(
                 height: 20,
               ),
@@ -295,10 +291,8 @@ class myapp extends StatelessWidget {
               ),
              SizedBox(height: 20,),
 
-              Container(// for second line--------
-                height: 10,
-                width: 1510,
-                color: Colors.grey,
+              Divider(
+                thickness: 8,
               ),
              SizedBox(height: 20,),
               //-----row use for stories
@@ -312,87 +306,170 @@ class myapp extends StatelessWidget {
                     Container(//-------------------------1st-------
                       height: 150,
                       width: 90,
-                     // child: CircleAvatar(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                        CircleAvatar(),
-                        Spacer(),
-                        Text('data')
-                      ],),
-          
-                      // child: Icon(Icons.add,),
-                    //  ),
+                     child: Padding(
+                       padding: EdgeInsets.all(5),
+                       child: Column(
+                         crossAxisAlignment: CrossAxisAlignment.start,
+                         children: [
+                           CircleAvatar(),
+                           Spacer(),
+                           Text('user 1'),
+                         ],
+                       ),
+                     ),
                       decoration: BoxDecoration(
-                        color: Colors.lightBlueAccent,
+                        color: Colors.brown,
                         borderRadius: BorderRadius.circular(10),
                       ),
-                    ),
+                    ),//-------------------------- 1st
           
                    SizedBox(width: 3,),
                     Container( //--------------------------------- 2nd-----
                       height: 150,
                       width: 100,
+                        child: Padding(
+                          padding: EdgeInsets.all(5),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              CircleAvatar(),
+                              Spacer(),
+                              Text('user 2'),
+                            ],
+                          ),
+                        ),
                       decoration: BoxDecoration(
-                        color: Colors.lightBlueAccent,
+                        color: Colors.pinkAccent,
                         borderRadius: BorderRadius.circular(10),
                     )
-                    ),
+                    ),//----------------------------2nd
           
                     SizedBox(width: 3,),
                     Container( //--------------------------------3rd----------
                       height: 150,
                       width: 90,
+                      child: Padding(
+                        padding: EdgeInsets.all(5),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            CircleAvatar(),
+                            Spacer(),
+                            Text('user 3'),
+                          ],
+                        ),
+                      ),
                       decoration: BoxDecoration(
-                      color: Colors.lightBlueAccent,
+                      color: Colors.red,
                          borderRadius: BorderRadius.circular(10),
                      ),
-                    ),
+                    ),// ---------------------   3rd
           
                     SizedBox(width: 3,),
                     Container(//-----------------------------------4th---------
                      height: 150,
                      width: 90,
+
+                        child: Padding(
+                          padding: EdgeInsets.all(5),
+                          child: Column(
+
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              CircleAvatar(),
+                              Spacer(),
+                              Text('user 4'),
+                            ],
+                          ),
+                        ),
                       decoration: BoxDecoration(
-                        color: Colors.lightBlueAccent,
+                        color: Colors.greenAccent,
                         borderRadius: BorderRadius.circular(10),
                       )
-                    ),
+                    ),//-------------------------4th
           
                     SizedBox(width: 3,),
                         Container(// -----------------------------------5th------
                         height: 150,
                         width: 90,
+                        child:
+                       Padding(
+                         padding:EdgeInsets.all(5),
+                         child: Column(
+                           crossAxisAlignment: CrossAxisAlignment.start,
+                           children: [
+                             CircleAvatar(),
+                             Spacer(),
+                             Text('user 5'),
+                           ],
+                         ),
+                       ) ,
+
+
                         decoration: BoxDecoration(
-                          color: Colors.lightBlueAccent,
+                          color: Colors.amberAccent,
                           borderRadius: BorderRadius.circular(10),
                         )
-                        ),
+                        ),//----------------5th
           
                     SizedBox(width: 3,),
                     Container(//--------------------------------- 6th--------
                         height: 150,
                         width: 90,
+                        child: Padding(
+                          padding: EdgeInsets.all(5),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              CircleAvatar(),
+                              Spacer(),
+                              Text('user 6'),
+                            ],
+                          ),
+                        ),
                         decoration: BoxDecoration(
-                          color: Colors.lightBlueAccent,
+                          color: Colors.green,
                           borderRadius: BorderRadius.circular(10),
                         )
-                    ),
+                    ),// ------------------6th
           
                     SizedBox(width: 3,),
                     Container(//--------------------------------------- 7th-------
                         height: 150,
                         width: 90,
+                        child:  Padding(
+                            padding: EdgeInsets.all(5),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              CircleAvatar(),
+                              Spacer(),
+                              Text('user 7'),
+                            ],
+                          ),
+                        ),
                         decoration: BoxDecoration(
-                          color: Colors.lightBlueAccent,
+                          color: Colors.white,
                           borderRadius: BorderRadius.circular(10),
                         )
-                    ),
+                    ),//-----------7th
           
-                    SizedBox(width: 3,),
+                    SizedBox(width: 3,),// ----------------------8th
                     Container(// -----------------------------8th------------
                         height: 150,
                         width: 90,
+
+                        child:  Padding(
+                            padding: EdgeInsets.all(5),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              CircleAvatar(),
+                              Spacer(),
+                              Text('user 8'),
+                            ],
+                          ),
+                        ),
                         decoration: BoxDecoration(
                           color: Colors.lightBlueAccent,
                           borderRadius: BorderRadius.circular(10),
@@ -403,10 +480,8 @@ class myapp extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 5,),
-              Container(// for the third line------
-                height: 3,
-                width: double.infinity,
-                color: Colors.grey,
+              Divider(
+                thickness: 3,
               ),
                 SizedBox(height: 10,),
               Row(// ------------------------for below post-
@@ -440,8 +515,8 @@ class myapp extends StatelessWidget {
                   width: double.infinity,
                   color: Colors.lightBlueAccent,
                 ),
-SizedBox(height: 20,),
-              Row(
+             SizedBox(height: 20,),
+              Row(// for the last icons and text in the last page-------
 
                 children: [
                  Icon(Icons.home),
@@ -454,22 +529,22 @@ SizedBox(height: 20,),
                   Text('share'),
                 ],
               ),
-          SizedBox(height: 50,),
-          Row(// ------------------------for below post-
-        children: [
-        CircleAvatar(
+             SizedBox(height: 50,),
+             Row(// ------------------------for below post-
+            children: [
+               CircleAvatar(
         backgroundColor: Colors.grey,
         ),
-        Column(//--------for the text with the circle avatar
+              Column(//--------for the text with the circle avatar
           children: [
             Text('BOL'),
             Text('3h'),
 
           ],
         ),
-        Spacer(),
-        Icon(Icons.more_horiz),
-        Icon(Icons.close),
+           Spacer(),
+            Icon(Icons.more_horiz),
+             Icon(Icons.close),
 
 
         ],
