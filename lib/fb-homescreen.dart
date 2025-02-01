@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class FbHomeScreen extends StatelessWidget {
   const FbHomeScreen({super.key});
-
+// for running this program we have to write its class name in the main.dart.
   @override
   Widget build(BuildContext context) {
     return
