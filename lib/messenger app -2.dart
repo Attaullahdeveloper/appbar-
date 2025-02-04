@@ -211,11 +211,17 @@ body:
                       CircleAvatar(
                         radius: 30,
                       ),
+                      SizedBox(width: 10,),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text('Imran'),
-                          Text('hi lets do something here....')
+                          Text('Imran',
+                            style: TextStyle(
+                                color: Colors.white
+                            ),),
+                          Text('hi lets do something here....',style: TextStyle(
+                              color: Colors.white
+                          ),)
                         ],
                       ),
 
@@ -229,10 +235,13 @@ body:
                         ),
                         Row(
                           children: [
+                            SizedBox(width: 10,),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text('Khalid'),
+                              Text('Khalid',style: TextStyle(
+                                  color: Colors.white
+                              ),),
                               Text('there is something see.....')
                        
                             ],
@@ -248,10 +257,11 @@ body:
                         ),
                         Row(
                           children: [
+                            SizedBox(width: 10,),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text('Khalid'),
+                                Text('Ayan'),
                                 Text('there is something see.....')
                        
                               ],
@@ -267,10 +277,11 @@ body:
                         ),
                         Row(
                           children: [
+                            SizedBox(width: 10,),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text('Khalid'),
+                                Text('Atta'),
                                 Text('there is something see.....')
                        
                               ],
@@ -286,10 +297,11 @@ body:
                         ),
                         Row(
                           children: [
+                            SizedBox(width: 10,),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text('Khalid'),
+                                Text('Farooq'),
                                 Text('there is something see.....')
                        
                               ],
@@ -305,10 +317,11 @@ body:
                         ),
                         Row(
                           children: [
+                            SizedBox(width: 10,),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text('Khalid'),
+                                Text('Younas'),
                                 Text('there is something see.....')
                        
                               ],
@@ -324,10 +337,11 @@ body:
                         ),
                         Row(
                           children: [
+                            SizedBox(width: 10,),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text('Khalid'),
+                                Text('Masood'),
                                 Text('there is something see.....')
                        
                               ],
@@ -343,10 +357,11 @@ body:
                         ),
                         Row(
                           children: [
+                            SizedBox(width: 10,),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text('Khalid'),
+                                Text('Maqsood'),
                                 Text('there is something see.....')
                        
                               ],
@@ -362,10 +377,11 @@ body:
                         ),
                         Row(
                           children: [
+                            SizedBox(width: 10,),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text('Khalid'),
+                                Text('Khubab'),
                                 Text('there is something see.....')
                        
                               ],
@@ -381,10 +397,11 @@ body:
                         ),
                         Row(
                           children: [
+                            SizedBox(width: 10,),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text('Khalid'),
+                                Text('Abubakar'),
                                 Text('there is something see.....')
                        
                               ],
@@ -400,10 +417,11 @@ body:
                         ),
                         Row(
                           children: [
+                            SizedBox(width: 10,),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text('Khalid'),
+                                Text('Mahmood'),
                                 Text('there is something see.....')
                        
                               ],
@@ -419,10 +437,11 @@ body:
                         ),
                         Row(
                           children: [
+                            SizedBox(width: 10,),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text('Khalid'),
+                                Text('Awan'),
                                 Text('there is something see.....')
                
                               ],
@@ -438,10 +457,11 @@ body:
                         ),
                         Row(
                           children: [
+                            SizedBox(width: 10,),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text('Khalid'),
+                                Text('Khan'),
                                 Text('there is something see.....')
                
                               ],
@@ -457,10 +477,11 @@ body:
                         ),
                         Row(
                           children: [
+                            SizedBox(width: 10,),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text('Khalid'),
+                                Text('Lala'),
                                 Text('there is something see.....')
                
                               ],
@@ -476,10 +497,11 @@ body:
                         ),
                         Row(
                           children: [
+                            SizedBox(width: 10,),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text('Khalid'),
+                                Text('Daniyal'),
                                 Text('there is something see.....')
                
                               ],
@@ -495,10 +517,11 @@ body:
                         ),
                         Row(
                           children: [
+                            SizedBox(width: 10,),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text('Khalid'),
+                                Text('Ahmad'),
                                 Text('there is something see.....')
                
                               ],
@@ -514,10 +537,11 @@ body:
                         ),
                         Row(
                           children: [
+                            SizedBox(width: 10,),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text('Khalid'),
+                                Text('Hanif'),
                                 Text('there is something see.....')
                
                               ],
@@ -533,10 +557,11 @@ body:
                         ),
                         Row(
                           children: [
+                            SizedBox(width: 10,),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text('Khalid'),
+                                Text('Qasier'),
                                 Text('there is something see.....')
                
                               ],
@@ -552,11 +577,21 @@ body:
                         ),
                         Row(
                           children: [
+                            SizedBox(width: 10,),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text('Khalid'),
-                                Text('there is something see.....')
+                                Text('Tanveer',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                                ),
+
+                                Text('there is something see.....',
+                                style: TextStyle(
+                                  color: Colors.white
+                                ),
+                                )
                
                               ],
                             )                  ],
