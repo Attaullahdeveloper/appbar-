@@ -116,7 +116,7 @@ body: SingleChildScrollView(
                    children: [
            SizedBox(width: 10,),
 
-                   Column(// -----------------favourite conatacts----------
+                   Column(// --------------------1st----// -----------------favourite conatacts----------
                      //crossAxisAlignment: CrossAxisAlignment.start,
                      children: [
                        CircleAvatar(
@@ -126,7 +126,11 @@ body: SingleChildScrollView(
                            backgroundImage: AssetImage('assestimg/cart1.jpg'),),
 
                        ),
-                       Text('Atta')
+                       Text('Atta',
+                       style: TextStyle(
+                         fontSize: 15,
+                         fontWeight: FontWeight.bold)
+                       ),
 
                      ],
 
@@ -139,15 +143,25 @@ body: SingleChildScrollView(
                      child:   CircleAvatar(radius: 30,
                          backgroundImage: AssetImage('assestimg/cart1.jpg'),),
                      ),
-                     Text('ayan'),
-                   ],),
+                     Text('ayan',
+                       style: TextStyle(
+                           fontSize: 15,
+                           fontWeight: FontWeight.bold
+
+                       ),),
+                   ],),//-------------2nd
                      SizedBox(width: 7,),
                    Column(children: [
                      CircleAvatar(
                        backgroundImage: AssetImage('assestimg/img 2.png'),
                        radius: 30,
                      ),
-                     Text('khan'),
+                     Text('khan',
+                     style: TextStyle(
+                       fontSize: 15,
+                       fontWeight: FontWeight.bold
+
+                     ),),
                    ],
                    ),
                      SizedBox(width: 7,),
@@ -156,7 +170,12 @@ body: SingleChildScrollView(
                        backgroundImage: AssetImage('assestimg/imgcar.jfif'),
                        radius: 30,
                      ),
-                     Text('Ali'),
+                     Text('Ali',
+                       style: TextStyle(
+                           fontSize: 15,
+                           fontWeight: FontWeight.bold
+
+                       ),),
                    ],
                    ),
                      SizedBox(width: 7,),
@@ -166,7 +185,12 @@ body: SingleChildScrollView(
 
                        radius: 30,
                      ),
-                     Text('Salman'),
+                     Text('Salman',
+                       style: TextStyle(
+                           fontSize: 15,
+                           fontWeight: FontWeight.bold
+
+                       ),),
                    ],
                    ),
                      SizedBox(width: 7,),
@@ -175,7 +199,12 @@ body: SingleChildScrollView(
                        backgroundImage: AssetImage('assestimg/img6.jfif'),
                        radius: 30,
                      ),
-                     Text('Adeel'),
+                     Text('Adeel',
+                       style: TextStyle(
+                           fontSize: 15,
+                           fontWeight: FontWeight.bold
+
+                       ),),
                    ],
                    ),
                      SizedBox(width: 7,),
@@ -184,7 +213,12 @@ body: SingleChildScrollView(
                        backgroundImage: AssetImage('assestimg/img7.jfif'),
                        radius: 30,
                      ),
-                     Text('Zia'),
+                     Text('Zia',
+                       style: TextStyle(
+                           fontSize: 15,
+                           fontWeight: FontWeight.bold
+
+                       ),),
                    ],
                    ),
                      SizedBox(width: 7,),
@@ -193,7 +227,12 @@ body: SingleChildScrollView(
                        backgroundImage: AssetImage('assestimg/img8.jfif'),
                        radius: 30,
                      ),
-                     Text('Haris'),
+                     Text('Haris',
+                       style: TextStyle(
+                           fontSize: 15,
+                           fontWeight: FontWeight.bold
+
+                       ),),
                    ],
                    ),
                      SizedBox(width: 7,),
@@ -202,7 +241,12 @@ body: SingleChildScrollView(
                        backgroundImage: AssetImage('assestimg/img9.jfif'),
                        radius: 30,
                      ),
-                     Text('Waseem'),
+                     Text('Waseem',
+                       style: TextStyle(
+                           fontSize: 15,
+                           fontWeight: FontWeight.bold
+
+                       ),),
                    ],
                    ),
                      SizedBox(width: 7,),
@@ -211,7 +255,12 @@ body: SingleChildScrollView(
                        backgroundImage: AssetImage('assestimg/img10.jfif'),
                        radius: 30,
                      ),
-                     Text('Anas'),
+                     Text('Anas',
+                       style: TextStyle(
+                           fontSize: 15,
+                           fontWeight: FontWeight.bold
+
+                       ),),
                    ],
                    ),
                      SizedBox(width: 7,),
@@ -220,7 +269,12 @@ body: SingleChildScrollView(
                        backgroundImage: AssetImage('assestimg/img11.png'),
                        radius: 30,
                      ),
-                     Text('Fahad'),
+                     Text('Fahad',
+                       style: TextStyle(
+                           fontSize: 15,
+                           fontWeight: FontWeight.bold
+
+                       ),),
                    ],
                    ),
                      SizedBox(width: 7,),
@@ -229,7 +283,12 @@ body: SingleChildScrollView(
                          backgroundImage: AssetImage('assestimg/img13.jfif'),
                          radius: 30,
                        ),
-                       Text('ahmad'),
+                       Text('ahmad',
+                         style: TextStyle(
+                             fontSize: 15,
+                             fontWeight: FontWeight.bold
+
+                         ),),
                      ],
                      ),
                      SizedBox(width: 7,),
@@ -238,7 +297,12 @@ body: SingleChildScrollView(
                          backgroundImage: AssetImage('assestimg/img14.jfif'),
                          radius: 30,
                        ),
-                       Text('ahmad'),
+                       Text('ahmad',
+                         style: TextStyle(
+                             fontSize: 15,
+                             fontWeight: FontWeight.bold
+
+                         ),),
                      ],
                      ),
                      SizedBox(width: 7,),
@@ -247,11 +311,16 @@ body: SingleChildScrollView(
                          backgroundImage: AssetImage('assestimg/img15.jfif'),
                          radius: 30,
                        ),
-                       Text('ahmad'),
+                       Text('ahmad',
+                         style: TextStyle(
+                             fontSize: 15,
+                             fontWeight: FontWeight.bold
+
+                         ),),
                      ],
                      ),
 
-                 ],),
+                 ],),// row for the first id place-----
 
                ),
                    SizedBox(height: 25,),
@@ -274,12 +343,20 @@ body: SingleChildScrollView(
                          ),
 
 
-                       SizedBox(width: 5,),
+                       SizedBox(width: 15,),
                        Column(
                          children: [
+
                           Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text('Attaullah'),
+                              Text('Attaullah',
+                                style: TextStyle(
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.bold
+
+                                ),),
+                              SizedBox(width: 6,),
                               Text('hi every one'),
                             ],
                           ),
@@ -298,10 +375,17 @@ body: SingleChildScrollView(
                      child:   CircleAvatar(radius: 30,
                          backgroundImage: AssetImage('assestimg/cart1.jpg'),),
                      ),
-                     SizedBox(width: 5,),
+                     SizedBox(width: 15,),
                      Column(
+                       mainAxisAlignment: MainAxisAlignment.start,
+                       crossAxisAlignment: CrossAxisAlignment.start,
                        children: [
-                         Text('Ayan khan'),
+                         Text('Ayan khan',
+                           style: TextStyle(
+                               fontSize: 15,
+                               fontWeight: FontWeight.bold
+
+                           ),),
                          Text('love from Pak'),
                        ],
                      ),
@@ -317,10 +401,16 @@ body: SingleChildScrollView(
                    child: CircleAvatar(radius: 30,
                          backgroundImage: AssetImage('assestimg/cart1.jpg'),),
                      ),
-                     SizedBox(width: 5,),
+                     SizedBox(width: 15,),
                      Column(
+                       crossAxisAlignment: CrossAxisAlignment.start,
                        children: [
-                         Text(' khan'),
+                         Text(' khan',
+                           style: TextStyle(
+                               fontSize: 15,
+                               fontWeight: FontWeight.bold
+
+                           ),),
                          Text('love from Ind'),
                        ],
                      ),
@@ -335,10 +425,16 @@ body: SingleChildScrollView(
                       backgroundColor: Colors.green,
                    child:CircleAvatar(radius: 30,
                          backgroundImage: AssetImage('assestimg/cart1.jpg'),), ),
-                     SizedBox(width: 5,),
+                     SizedBox(width: 15,),
                      Column(
+                       crossAxisAlignment: CrossAxisAlignment.start,
                        children: [
-                         Text('Ali'),
+                         Text('Ali',
+                           style: TextStyle(
+                               fontSize: 15,
+                               fontWeight: FontWeight.bold
+
+                           ),),
                          Text('love from Pak'),
                        ],
                      ),
@@ -351,10 +447,16 @@ body: SingleChildScrollView(
                    children: [
                      CircleAvatar(radius: 30,
                        backgroundImage: AssetImage('assestimg/img8.jfif'),),
-                     SizedBox(width: 5,),
+                     SizedBox(width: 15,),
                      Column(
+                       crossAxisAlignment: CrossAxisAlignment.start,
                        children: [
-                         Text('Salman'),
+                         Text('Salman',
+                           style: TextStyle(
+                               fontSize: 15,
+                               fontWeight: FontWeight.bold
+
+                           ),),
                          Text('love from USA'),
                        ],
                      )
@@ -365,10 +467,16 @@ body: SingleChildScrollView(
                    children: [
                      CircleAvatar(radius: 30,
                        backgroundImage: AssetImage('assestimg/img9.jfif'),),
-                     SizedBox(width: 5,),
+                     SizedBox(width: 15,),
                      Column(
+                       crossAxisAlignment: CrossAxisAlignment.start,
                        children: [
-                         Text('Adeel'),
+                         Text('Adeel',
+                           style: TextStyle(
+                               fontSize: 15,
+                               fontWeight: FontWeight.bold
+
+                           ),),
                          Text('love from Pak'),
                        ],
                      )
@@ -379,10 +487,16 @@ body: SingleChildScrollView(
                    children: [
                      CircleAvatar(radius: 30,
                        backgroundImage: AssetImage('assestimg/img10.jfif'),),
-                     SizedBox(width: 5,),
+                     SizedBox(width: 15,),
                      Column(
+                       crossAxisAlignment: CrossAxisAlignment.start,
                        children: [
-                         Text('Zia'),
+                         Text('Zia',
+                           style: TextStyle(
+                               fontSize: 15,
+                               fontWeight: FontWeight.bold
+
+                           ),),
                          Text('love from Pak'),
                        ],
                      )
@@ -393,10 +507,16 @@ body: SingleChildScrollView(
                    children: [
                      CircleAvatar(radius: 30,
                        backgroundImage: AssetImage('assestimg/img11.png'),),
-                     SizedBox(width: 5,),
+                     SizedBox(width: 15,),
                      Column(
+                       crossAxisAlignment: CrossAxisAlignment.start,
                        children: [
-                         Text('Haris'),
+                         Text('Haris',
+                           style: TextStyle(
+                               fontSize: 15,
+                               fontWeight: FontWeight.bold
+
+                           ),),
                          Text('love from London'),
                        ],
                      )
@@ -407,10 +527,16 @@ body: SingleChildScrollView(
                    children: [
                      CircleAvatar(radius: 30,
                        backgroundImage: AssetImage('assestimg/car 2.jfif'),),
-                     SizedBox(width: 5,),
+                     SizedBox(width: 15,),
                      Column(
+                       crossAxisAlignment: CrossAxisAlignment.start,
                        children: [
-                         Text('Waseem'),
+                         Text('Waseem',
+                           style: TextStyle(
+                               fontSize: 15,
+                               fontWeight: FontWeight.bold
+
+                           ),),
                          Text('Best of luck'),
                        ],
                      )
@@ -421,10 +547,16 @@ body: SingleChildScrollView(
                    children: [
                      CircleAvatar(radius: 30,
                        backgroundImage: AssetImage('assestimg/img13.jfif'),),
-                     SizedBox(width: 5,),
+                     SizedBox(width: 15,),
                      Column(
+                       crossAxisAlignment: CrossAxisAlignment.start,
                        children: [
-                         Text('Anas'),
+                         Text('Anas',
+                           style: TextStyle(
+                               fontSize: 15,
+                               fontWeight: FontWeight.bold
+
+                           ),),
                          Text('love from Pak'),
                        ],
                      )
@@ -435,10 +567,16 @@ body: SingleChildScrollView(
                    children: [
                      CircleAvatar(radius: 30,
                        backgroundImage: AssetImage('assestimg/img14.jfif'),),
-                     SizedBox(width: 5,),
+                     SizedBox(width: 15,),
                      Column(
+                       crossAxisAlignment: CrossAxisAlignment.start,
                        children: [
-                         Text('fahad'),
+                         Text('fahad',
+                           style: TextStyle(
+                               fontSize: 15,
+                               fontWeight: FontWeight.bold
+
+                           ),),
                          Text('love a lot'),
                        ],
                      )
@@ -449,10 +587,16 @@ body: SingleChildScrollView(
                    children: [
                      CircleAvatar(radius: 30,
                        backgroundImage: AssetImage('assestimg/img14.jfif'),),
-                     SizedBox(width: 5,),
+                     SizedBox(width: 15,),
                      Column(
+                       crossAxisAlignment: CrossAxisAlignment.start,
                        children: [
-                         Text('ahmad'),
+                         Text('ahmad',
+                           style: TextStyle(
+                               fontSize: 15,
+                               fontWeight: FontWeight.bold
+
+                           ),),
                          Text('love from Pak'),
                        ],
                      )
@@ -463,10 +607,16 @@ body: SingleChildScrollView(
                    children: [
                      CircleAvatar(radius: 30,
                        backgroundImage: AssetImage('assestimg/img15.jfif'),),
-                     SizedBox(width: 5,),
+                     SizedBox(width: 15,),
                      Column(
+                       crossAxisAlignment: CrossAxisAlignment.start,
                        children: [
-                         Text('Ahmad ali'),
+                         Text('Ahmad ali',
+                           style: TextStyle(
+                               fontSize: 15,
+                               fontWeight: FontWeight.bold
+
+                           ),),
                          Text('love from Pak'),
                        ],
                      )
@@ -477,10 +627,16 @@ body: SingleChildScrollView(
                    children: [
                      CircleAvatar(radius: 30,
                        backgroundImage: AssetImage('assestimg/imgcar.jfif'),),
-                     SizedBox(width: 5,),
+                     SizedBox(width: 15,),
                      Column(
+                       crossAxisAlignment: CrossAxisAlignment.start,
                        children: [
-                         Text('Anwar'),
+                         Text('Anwar',
+                           style: TextStyle(
+                               fontSize: 15,
+                               fontWeight: FontWeight.bold
+
+                           ),),
                          Text('love from Pak'),
                        ],
                      )
@@ -492,10 +648,16 @@ body: SingleChildScrollView(
                    children: [
                      CircleAvatar(radius: 30,
                        backgroundImage: AssetImage('assestimg/car 1.jpg'),),
-                     SizedBox(width: 5,),
+                     SizedBox(width: 15,),
                      Column(
+                       crossAxisAlignment: CrossAxisAlignment.start,
                        children: [
-                         Text('Abubakar'),
+                         Text('Abubakar',
+                           style: TextStyle(
+                               fontSize: 15,
+                               fontWeight: FontWeight.bold
+
+                           ),),
                          Text('love from Pak'),
                        ],
                      )
