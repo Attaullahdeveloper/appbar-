@@ -84,7 +84,7 @@ body: SingleChildScrollView(
       SingleChildScrollView(
         child: Container(// for the large home page-------------------
           height: 1500,
-          width: 800,
+          width: 400,
 
           decoration: BoxDecoration(
             color: Colors.white,

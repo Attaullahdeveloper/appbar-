@@ -6,19 +6,49 @@ class Messengeruidesign2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
+
       appBar: AppBar(
-        leading: Icon(Icons.menu),
+
+        backgroundColor: Colors.black,
+        leading: Icon(Icons.menu,
+        color: Colors.white,),
       title: Text('Chats',
       style: TextStyle(
+        color: Colors.white,
         fontWeight: FontWeight.bold,
       ),),
 
 
         actions: [
+          Padding(
+            padding: EdgeInsets.all(10),
+            child: Row(// this row is taken bcs the space from the right side can't be given using
+              // simple action and icons inside it------
+              children: [
+                
+                CircleAvatar(
+                  backgroundColor: Colors.black,
+                  child: Icon(Icons.camera_alt_outlined,
+                    color: Colors.white,),
+                ),
+            
+                CircleAvatar(
+                  backgroundColor: Colors.black,
+                  child: Icon(Icons.video_call_outlined,
+                    color: Colors.white,),
+                ),
+            
+                CircleAvatar(
+                  backgroundColor: Colors.black,
+                  child: Icon(Icons.edit,
+                    color: Colors.white,),
+                ),
+              ],
+            ),
+          ),
 
-          CircleAvatar(
-            child: Icon(Icons.edit),
-          )
+
         ],
       ),
 
@@ -32,19 +62,24 @@ body:
             Center(
         
               child: Container(
-        
+
                 height: 40,
                 width: 450,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(100),
-                  color: Color(0xFFF5F5F5),
+                  color: Colors.grey,
+                 // color: Color(0xFFF5F5F5),// for own color custom-------
                 ),
                 child: Row(
                   children: [
                     SizedBox(width: 15,),
-                    Icon(Icons.search),
+                    Icon(Icons.search,),
+
                     SizedBox(width: 15,),
-                    Text('Search')
+                    Text('Search',
+                    style: TextStyle(
+
+                    ),)
                   ],
                 ),
               ),
@@ -64,106 +99,152 @@ body:
                         radius: 30,
                         backgroundImage: AssetImage('assestimg/img8.jfif'),
                       ),
-                      Text('Your id')
+                      Text('Your id',
+                      style: TextStyle(
+                        color: Colors.white
+                      ),)
                     ],
                   ),
                   SizedBox(width: 10,),
                   Column(
                     children: [
                      CircleAvatar(
+                       backgroundImage: AssetImage('assestimg/img 2.png'),
                        radius: 30,
                      ) ,
-                      Text('Imran..')
+                      Text('Imran..',
+                          style: TextStyle(
+                          color: Colors.white
+                      ),)
                     ],
                   ),
                   SizedBox(width: 10,),
                   Column(
                     children: [
                       CircleAvatar(
+                        backgroundImage: AssetImage('assestimg/car 1.jpg'),
                         radius: 30,
                       ),
-                      Text('Khalid..')
+                      Text('Khalid..',style: TextStyle(
+                          color: Colors.white
+                      ),)
                     ],
                   ),
                   SizedBox(width: 10,),
                   Column(
                     children: [
                       CircleAvatar(
+                        backgroundImage: AssetImage('assestimg/car 2.jfif'),
                         radius: 30,
                       ),
-                      Text('Ayan..')
+                      Text('Ayan..',
+                        style: TextStyle(
+                          color: Colors.white
+                      ),)
                     ],
                   ),
                   SizedBox(width: 10,),
                   Column(
                     children: [
                       CircleAvatar(
+                        backgroundImage: AssetImage('assestimg/cart1.jpg'),
                         radius: 30,
                       ),
-                      Text('Atta..')
+                      Text('Atta..',
+                        style: TextStyle(
+                            color: Colors.white
+                        ),)
                     ],
                   ),
                   SizedBox(width: 10,),
                   Column(
                     children: [
                       CircleAvatar(
+                        backgroundImage: AssetImage('assestimg/img 2.png'),
                         radius: 30,
                       ),
-                      Text('Farooq..')
+                      Text('Farooq..',
+                        style: TextStyle(
+                            color: Colors.white
+                        ),)
                     ],
                   ),
                   SizedBox(width: 10,),
                   Column(
                     children: [
                       CircleAvatar(
+                        backgroundImage: AssetImage('assestimg/img5.jfif'),
                         radius: 30,
                       ),
-                      Text('Asif..')
+                      Text('Asif..',
+                        style: TextStyle(
+                            color: Colors.white
+                        ),)
                     ],
                   ),
                   SizedBox(width: 10,),
                   Column(
                     children: [
                       CircleAvatar(
+                        backgroundImage: AssetImage('assestimg/img6.jfif'),
                         radius: 30,
                       ),
-                      Text('Naeem..')
+                      Text('Naeem..',
+                        style: TextStyle(
+                            color: Colors.white
+                        ),)
                     ],
                   ),
                   SizedBox(width: 10,),
                   Column(
                     children: [
                       CircleAvatar(
+                        backgroundImage: AssetImage('assestimg/img7.jfif'),
                         radius: 30,
                       ),
-                      Text('Waqas..')
+                      Text('Waqas..',
+                        style: TextStyle(
+                            color: Colors.white
+                        ),)
                     ],
                   ),
                   SizedBox(width: 10,),
                   Column(
                     children: [
                       CircleAvatar(
+                        backgroundImage: AssetImage('assestimg/img8.jfif'),
                         radius: 30,
                       ),
-                      Text('Ahmad..')
+                      Text('Ahmad..',
+                        style: TextStyle(
+                            color: Colors.white
+                        ),)
                     ],
                   ),
                   SizedBox(width: 10,),
                   Column(
                     children: [
                       CircleAvatar(
+                        backgroundImage: AssetImage('assestimg/img9.jfif'),
                         radius: 30,
                       ),
-                      Text('Ali..')
+                      Text('Ali..',
+                        style: TextStyle(
+                            color: Colors.white
+                        ),)
                     ],
                   ),
                   SizedBox(width: 10,),
                   Column(
                     children: [
                       CircleAvatar(
+                        backgroundImage: AssetImage('assestimg/img10.jfif'),
                         radius: 30,
                       ),
-                      Text('Amir..')
+                      Text('Amir..',
+                        style: TextStyle(
+                            color: Colors.white
+                        ),)
                     ],
                   ),
         
@@ -179,10 +260,15 @@ body:
                   width: 150,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(100),
-                    color: Color(0xFFF5F5F5),
+                    color: Colors.grey,
+                    //color: Color(0xFFF5F5F5),
                   ),
                   child: Center(
-                    child: Text('HOME'),
+                    child: Text('HOME',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold
+                    ),),
                   ),
 
                 ),
@@ -195,7 +281,11 @@ body:
                     ),
                     child: Container(
                       child:Center(
-                      child: Text('CHANNELS'),
+                      child: Text('CHANNELS',
+                        style: TextStyle(
+                            color: Colors.white,
+                          fontWeight: FontWeight.bold
+                        ),),
                     ),
                     ),
                   ),
@@ -209,13 +299,14 @@ body:
                   Row(
                     children: [
                       CircleAvatar(
+                        backgroundImage: AssetImage('assestimg/img5.jfif'),
                         radius: 30,
                       ),
                       SizedBox(width: 10,),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text('Imran',
+                          Text('Bhai',
                             style: TextStyle(
                                 color: Colors.white
                             ),),
@@ -231,6 +322,7 @@ body:
                     Row(
                       children: [
                         CircleAvatar(
+                          backgroundImage: AssetImage('assestimg/img6.jfif'),
                           radius: 30,
                         ),
                         Row(
@@ -242,7 +334,10 @@ body:
                               Text('Khalid',style: TextStyle(
                                   color: Colors.white
                               ),),
-                              Text('there is something see.....')
+                              Text('there is something see.....',
+                                style: TextStyle(
+                                    color: Colors.white
+                                ),)
                        
                             ],
                           )                  ],
@@ -253,6 +348,7 @@ body:
                     Row(
                       children: [
                         CircleAvatar(
+                          backgroundImage: AssetImage('assestimg/img7.jfif'),
                           radius: 30,
                         ),
                         Row(
@@ -261,8 +357,14 @@ body:
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text('Ayan'),
-                                Text('there is something see.....')
+                                Text('Ayan',
+                                  style: TextStyle(
+                                      color: Colors.white
+                                  ),),
+                                Text('there is something see.....',
+                                  style: TextStyle(
+                                      color: Colors.white
+                                  ),)
                        
                               ],
                             )                  ],
@@ -273,6 +375,7 @@ body:
                     Row(
                       children: [
                         CircleAvatar(
+                          backgroundImage: AssetImage('assestimg/img8.jfif'),
                           radius: 30,
                         ),
                         Row(
@@ -281,8 +384,42 @@ body:
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text('Atta'),
-                                Text('there is something see.....')
+                                Text('Atta',
+                                  style: TextStyle(
+                                      color: Colors.white
+                                  ),),
+                                Text('there is something see.....',
+                                  style: TextStyle(
+                                      color: Colors.white
+                                  ),)
+                       
+                              ],
+                            )                  ],
+                        )
+                      ],
+                    ),
+                    SizedBox(height: 8,),
+                    Row(
+                      children: [
+
+                        CircleAvatar(
+                          backgroundImage: AssetImage('assestimg/img9.jfif'),
+                          radius: 30,
+                        ),
+                        Row(
+                          children: [
+                            SizedBox(width: 10,),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text('Farooq',
+                                  style: TextStyle(
+                                      color: Colors.white
+                                  ),),
+                                Text('there is something see.....',
+                                  style: TextStyle(
+                                      color: Colors.white
+                                  ),)
                        
                               ],
                             )                  ],
@@ -293,6 +430,7 @@ body:
                     Row(
                       children: [
                         CircleAvatar(
+                          backgroundImage: AssetImage('assestimg/img10.jfif'),
                           radius: 30,
                         ),
                         Row(
@@ -301,8 +439,14 @@ body:
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text('Farooq'),
-                                Text('there is something see.....')
+                                Text('Younas',
+                                  style: TextStyle(
+                                      color: Colors.white
+                                  ),),
+                                Text('there is something see.....',
+                                  style: TextStyle(
+                                      color: Colors.white
+                                  ),)
                        
                               ],
                             )                  ],
@@ -313,6 +457,7 @@ body:
                     Row(
                       children: [
                         CircleAvatar(
+                          backgroundImage: AssetImage('assestimg/img11.png'),
                           radius: 30,
                         ),
                         Row(
@@ -321,8 +466,14 @@ body:
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text('Younas'),
-                                Text('there is something see.....')
+                                Text('Masood',
+                                  style: TextStyle(
+                                      color: Colors.white
+                                  ),),
+                                Text('there is something see.....',
+                                  style: TextStyle(
+                                      color: Colors.white
+                                  ),)
                        
                               ],
                             )                  ],
@@ -333,6 +484,7 @@ body:
                     Row(
                       children: [
                         CircleAvatar(
+                          backgroundImage: AssetImage('assestimg/img7.jfif'),
                           radius: 30,
                         ),
                         Row(
@@ -341,8 +493,14 @@ body:
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text('Masood'),
-                                Text('there is something see.....')
+                                Text('Maqsood',
+                                  style: TextStyle(
+                                      color: Colors.white
+                                  ),),
+                                Text('there is something see.....',
+                                  style: TextStyle(
+                                      color: Colors.white
+                                  ),)
                        
                               ],
                             )                  ],
@@ -353,6 +511,7 @@ body:
                     Row(
                       children: [
                         CircleAvatar(
+                          backgroundImage: AssetImage('assestimg/img7.jfif'),
                           radius: 30,
                         ),
                         Row(
@@ -361,8 +520,14 @@ body:
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text('Maqsood'),
-                                Text('there is something see.....')
+                                Text('Khubab',
+                                  style: TextStyle(
+                                      color: Colors.white
+                                  ),),
+                                Text('there is something see.....',
+                                  style: TextStyle(
+                                      color: Colors.white
+                                  ),)
                        
                               ],
                             )                  ],
@@ -373,6 +538,7 @@ body:
                     Row(
                       children: [
                         CircleAvatar(
+                          backgroundImage: AssetImage('assestimg/img7.jfif'),
                           radius: 30,
                         ),
                         Row(
@@ -381,8 +547,14 @@ body:
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text('Khubab'),
-                                Text('there is something see.....')
+                                Text('Abubakar',
+                                  style: TextStyle(
+                                      color: Colors.white
+                                  ),),
+                                Text('there is something see.....',
+                                  style: TextStyle(
+                                      color: Colors.white
+                                  ),)
                        
                               ],
                             )                  ],
@@ -393,6 +565,7 @@ body:
                     Row(
                       children: [
                         CircleAvatar(
+                          backgroundImage: AssetImage('assestimg/img7.jfif'),
                           radius: 30,
                         ),
                         Row(
@@ -401,8 +574,14 @@ body:
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text('Abubakar'),
-                                Text('there is something see.....')
+                                Text('Mahmood',
+                                  style: TextStyle(
+                                      color: Colors.white
+                                  ),),
+                                Text('there is something see.....',
+                                  style: TextStyle(
+                                      color: Colors.white
+                                  ),)
                        
                               ],
                             )                  ],
@@ -413,6 +592,7 @@ body:
                     Row(
                       children: [
                         CircleAvatar(
+                          backgroundImage: AssetImage('assestimg/img7.jfif'),
                           radius: 30,
                         ),
                         Row(
@@ -421,9 +601,15 @@ body:
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text('Mahmood'),
-                                Text('there is something see.....')
-                       
+                                Text('Awan',
+                                  style: TextStyle(
+                                      color: Colors.white
+                                  ),),
+                                Text('there is something see.....',
+                                  style: TextStyle(
+                                      color: Colors.white
+                                  ),)
+               
                               ],
                             )                  ],
                         )
@@ -433,6 +619,7 @@ body:
                     Row(
                       children: [
                         CircleAvatar(
+                          backgroundImage: AssetImage('assestimg/img7.jfif'),
                           radius: 30,
                         ),
                         Row(
@@ -441,8 +628,14 @@ body:
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text('Awan'),
-                                Text('there is something see.....')
+                                Text('Khan',
+                                  style: TextStyle(
+                                      color: Colors.white
+                                  ),),
+                                Text('there is something see.....',
+                                  style: TextStyle(
+                                      color: Colors.white
+                                  ),)
                
                               ],
                             )                  ],
@@ -454,6 +647,7 @@ body:
                       children: [
                         CircleAvatar(
                           radius: 30,
+                          backgroundImage: AssetImage('assestimg/img7.jfif'),
                         ),
                         Row(
                           children: [
@@ -461,8 +655,14 @@ body:
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text('Khan'),
-                                Text('there is something see.....')
+                                Text('Lala',
+                                  style: TextStyle(
+                                      color: Colors.white
+                                  ),),
+                                Text('there is something see.....',
+                                  style: TextStyle(
+                                      color: Colors.white
+                                  ),)
                
                               ],
                             )                  ],
@@ -473,6 +673,7 @@ body:
                     Row(
                       children: [
                         CircleAvatar(
+                          backgroundImage: AssetImage('assestimg/img7.jfif'),
                           radius: 30,
                         ),
                         Row(
@@ -481,8 +682,14 @@ body:
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text('Lala'),
-                                Text('there is something see.....')
+                                Text('Daniyal',
+                            style: TextStyle(
+                                color: Colors.white
+                            ),),
+                                Text('there is something see.....',
+                                  style: TextStyle(
+                                      color: Colors.white
+                                  ),)
                
                               ],
                             )                  ],
@@ -493,6 +700,7 @@ body:
                     Row(
                       children: [
                         CircleAvatar(
+                          backgroundImage: AssetImage('assestimg/img7.jfif'),
                           radius: 30,
                         ),
                         Row(
@@ -501,8 +709,13 @@ body:
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text('Daniyal'),
-                                Text('there is something see.....')
+                                Text('Ahmad',style: TextStyle(
+                                    color: Colors.white
+                                ),),
+                                Text('there is something see.....',
+                                  style: TextStyle(
+                                      color: Colors.white
+                                  ),)
                
                               ],
                             )                  ],
@@ -513,6 +726,7 @@ body:
                     Row(
                       children: [
                         CircleAvatar(
+                          backgroundImage: AssetImage('assestimg/img7.jfif'),
                           radius: 30,
                         ),
                         Row(
@@ -521,8 +735,14 @@ body:
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text('Ahmad'),
-                                Text('there is something see.....')
+                                Text('Hanif',
+                                  style: TextStyle(
+                                      color: Colors.white
+                                  ),),
+                                Text('there is something see.....',
+                                  style: TextStyle(
+                                      color: Colors.white
+                                  ),)
                
                               ],
                             )                  ],
@@ -533,6 +753,7 @@ body:
                     Row(
                       children: [
                         CircleAvatar(
+                          backgroundImage: AssetImage('assestimg/img7.jfif'),
                           radius: 30,
                         ),
                         Row(
@@ -541,8 +762,14 @@ body:
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text('Hanif'),
-                                Text('there is something see.....')
+                                Text('Qasier',
+                                  style: TextStyle(
+                                      color: Colors.white
+                                  ),),
+                                Text('there is something see.....',
+                                  style: TextStyle(
+                                      color: Colors.white
+                                  ),)
                
                               ],
                             )                  ],
@@ -553,26 +780,7 @@ body:
                     Row(
                       children: [
                         CircleAvatar(
-                          radius: 30,
-                        ),
-                        Row(
-                          children: [
-                            SizedBox(width: 10,),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text('Qasier'),
-                                Text('there is something see.....')
-               
-                              ],
-                            )                  ],
-                        )
-                      ],
-                    ),
-                    SizedBox(height: 8,),
-                    Row(
-                      children: [
-                        CircleAvatar(
+                          backgroundImage: AssetImage('assestimg/img7.jfif'),
                           radius: 30,
                         ),
                         Row(
