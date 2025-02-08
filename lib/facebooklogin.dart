@@ -70,12 +70,13 @@ class Fbloginpage extends StatelessWidget{
                 ),
                 child: TextField(
                   controller: passwordController,
+                  keyboardType: TextInputType.emailAddress,
                   obscureText: true,
                   decoration: InputDecoration(
-                      floatingLabelBehavior: FloatingLabelBehavior.always,
+                      floatingLabelBehavior: FloatingLabelBehavior.auto,
                       border: InputBorder.none,
                       contentPadding: EdgeInsets.all(16),
-                      hintText: 'Password',
+                      labelText: 'Password',
                       // labelText: 'Password',
                       prefixIcon: Icon(Icons.lock)
                   ),
