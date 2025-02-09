@@ -1,3 +1,5 @@
+import 'package:firstproject/Fbsignup2.dart';
+import 'package:firstproject/fb-homescreen.dart';
 import 'package:flutter/material.dart';
 
 
@@ -10,10 +12,14 @@ class Fbsignup3 extends StatelessWidget {
       body:Column(
         children: [
           Container(
-
             height: MediaQuery.of(context).size.width*0.6,
             width: double.infinity,
-            color: Colors.blue,
+
+            decoration: BoxDecoration(
+                color: Colors.blue,
+              image: DecorationImage(image: AssetImage('assestimg/facebook.png'),
+              fit: BoxFit.cover)
+            ),
           ),
           SizedBox(height: 50,),
           Container(
@@ -33,14 +39,14 @@ class Fbsignup3 extends StatelessWidget {
             // for the text input ------------
             child: TextField(
               keyboardType: TextInputType.emailAddress,
-             // controller: emailController,
+              controller: passwordController,
+              obscureText: true,
               decoration: InputDecoration(
                   floatingLabelBehavior: FloatingLabelBehavior.auto,
-                  labelText: 'Enter email or Phone number',
+                  labelText: 'Password',
                   border: InputBorder.none,
                   contentPadding: EdgeInsets.all(16),
-
-                  prefixIcon: Icon(Icons.email)
+                  prefixIcon: Icon(Icons.lock)
               ),
             ),
           ),
@@ -53,8 +59,14 @@ class Fbsignup3 extends StatelessWidget {
                 .size
                 .width * 0.9,
             child: Center(
-              child: TextButton(onPressed: () {}, child: Text('Next', style:
-              TextStyle(color: Colors.white),)),
+              child: TextButton(onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context)=>FbHomeScreen())
+                );
+              }, child: Text('Next', style:
+              TextStyle(color: Colors.white),)
+              ),
 
             ),
             decoration: BoxDecoration(
@@ -69,7 +81,9 @@ class Fbsignup3 extends StatelessWidget {
             height: 48,
             width: MediaQuery.of(context).size.width * 0.2,
             child: Center(
-              child: TextButton(onPressed: () {}, child: Text('Back', style:
+              child: TextButton(onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>Fbsignup2()));
+              }, child: Text('Back', style:
               TextStyle(color: Colors.white),)),
 
             ),

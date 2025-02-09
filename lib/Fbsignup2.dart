@@ -1,3 +1,5 @@
+import 'package:firstproject/Fbsignup3.dart';
+import 'package:firstproject/fb-signup%20page.dart';
 import 'package:flutter/material.dart';
 
 
@@ -13,7 +15,13 @@ import 'package:flutter/material.dart';
 
       height: MediaQuery.of(context).size.width*0.6,
       width: double.infinity,
-      color: Colors.blue,
+
+        decoration: BoxDecoration(
+            color: Colors.blue,
+          image: DecorationImage(image: AssetImage('assestimg/facebook.png'),
+          fit: BoxFit.cover
+          )
+        ),
       ),
             SizedBox(height: 50,),
             Container(
@@ -53,7 +61,14 @@ import 'package:flutter/material.dart';
                   .size
                   .width * 0.9,
               child: Center(
-                child: TextButton(onPressed: () {}, child: Text('Next', style:
+                child: TextButton(onPressed: () {
+                  // for the navigation-------------
+                  Navigator.push(
+                      context,
+                  MaterialPageRoute(builder: (context)=>Fbsignup3()
+                  )
+                  );
+                }, child: Text('Next', style:
                 TextStyle(color: Colors.white),)),
 
               ),
@@ -69,7 +84,12 @@ import 'package:flutter/material.dart';
               height: 48,
               width: MediaQuery.of(context).size.width * 0.2,
               child: Center(
-                child: TextButton(onPressed: () {}, child: Text('Back', style:
+                child: TextButton(onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context)=>FbsignupScreen())
+                  );
+                }, child: Text('Back', style:
                 TextStyle(color: Colors.white),)),
 
               ),

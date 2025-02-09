@@ -1,3 +1,5 @@
+import 'package:firstproject/Fbsignup2.dart';
+import 'package:firstproject/Fbsignup3.dart';
 import 'package:firstproject/facebooklogin.dart';
 import 'package:firstproject/fb%20-%20sign%20up%20screen.dart';
 import 'package:firstproject/fb-homescreen.dart';
@@ -14,7 +16,8 @@ class myapp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Fbloginpage(),
+      debugShowCheckedModeBanner: false,
+      home: FbsignupScreen(),
     );
   }
 }

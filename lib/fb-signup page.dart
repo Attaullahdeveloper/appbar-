@@ -1,3 +1,5 @@
+import 'package:firstproject/Fbsignup2.dart';
+import 'package:firstproject/fb-homescreen.dart';
 import 'package:flutter/material.dart';
 
 
@@ -11,6 +13,7 @@ import 'package:flutter/material.dart';
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
 
       body:Column(
@@ -19,7 +22,14 @@ import 'package:flutter/material.dart';
 
         height: MediaQuery.of(context).size.width*0.6,
         width: double.infinity,
-        color: Colors.blue,
+
+        decoration: BoxDecoration(
+            color: Colors.blue,
+          image:DecorationImage(image: AssetImage('assestimg/facebook.png',),
+            fit: BoxFit.cover
+
+          )
+        ),
 
       ),
           SizedBox(height: 60,),
@@ -107,7 +117,13 @@ import 'package:flutter/material.dart';
           // button----------
           SizedBox(height: 10,),
           Container(
-            child: TextButton(onPressed: (){}, child: Text('Signup',
+            child: TextButton(onPressed: (){
+              // for the navigation------------------
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context)=>Fbsignup2()),
+              );
+            }, child: Text('Signup',
             style: TextStyle(color: Colors.white),)),
             height: 50,
             width:MediaQuery.of(context).size.width*0.9,
@@ -121,8 +137,20 @@ import 'package:flutter/material.dart';
          Row(
            children: [
                  SizedBox(width: 80,),
-             TextButton(onPressed: (){}, child: Text('Continue with google')),
-             IconButton(onPressed: (){}, icon: Icon(Icons.g_mobiledata,size: 40,
+             TextButton(onPressed: (){
+               // for the navigation-----------------
+               Navigator.push(
+                 context,
+                 MaterialPageRoute(builder: (context)=>FbHomeScreen())
+               );
+             }, child: Text('Continue with google')),
+             IconButton(onPressed: (){
+               // for the navigation----------------
+               Navigator.push(
+                   context,
+                   MaterialPageRoute(builder: (context)=>FbHomeScreen())
+               );
+             }, icon: Icon(Icons.g_mobiledata,size: 40,
              color: Colors.blue,))
            ],
          )

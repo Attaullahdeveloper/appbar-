@@ -1,3 +1,4 @@
+import 'package:firstproject/messenger%20app%20-2.dart';
 import 'package:flutter/material.dart';
 
 class FbHomeScreen extends StatelessWidget {
@@ -35,17 +36,16 @@ class FbHomeScreen extends StatelessWidget {
               width: 10,
             ),
             CircleAvatar(
-              child: Icon(
-                Icons.message,
-                color: Colors.black,
-                size: 20,
+              child: IconButton(onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>Messengeruidesign2()));
+              }, icon: Icon(Icons.messenger)),
               ),
+        ],
             ),
-            SizedBox(
-              width: 40,
-            )
-          ],
-        ),
+            // SizedBox(
+            //   width: 40,
+            // ),
+
         //app bar finished-------
         body: SingleChildScrollView(
           child: Column(
