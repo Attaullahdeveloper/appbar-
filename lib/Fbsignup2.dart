@@ -46,7 +46,7 @@ import 'package:flutter/material.dart';
                     floatingLabelBehavior: FloatingLabelBehavior.auto,
                     labelText: 'Enter email or Phone number',
                     border: InputBorder.none,
-                    contentPadding: EdgeInsets.all(16),
+                    contentPadding: EdgeInsets.all(10),
 
                     prefixIcon: Icon(Icons.email)
                 ),

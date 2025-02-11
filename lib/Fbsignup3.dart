@@ -45,7 +45,7 @@ class Fbsignup3 extends StatelessWidget {
                   floatingLabelBehavior: FloatingLabelBehavior.auto,
                   labelText: 'Password',
                   border: InputBorder.none,
-                  contentPadding: EdgeInsets.all(16),
+                  contentPadding: EdgeInsets.all(10),
                   prefixIcon: Icon(Icons.lock)
               ),
             ),

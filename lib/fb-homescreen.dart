@@ -99,33 +99,36 @@ class FbHomeScreen extends StatelessWidget {
                 height: 20,
               ),
 
-              Row(//-----> row use for searching area
-                // for the second circle avatar and other property-----
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  CircleAvatar(
-                    // adding image in the circle avatar-------
-                    backgroundImage: AssetImage('assestimg/img 2.png'),
-                    //backgroundColor: Colors.lightBlueAccent,
-                    //child: Icon(Icons.account_circle,),//
-                  ),
-                  Container(
-                    height: 35,
-                    width: 320,
-                    child: Center(
-                      child: Text('Whats on your mind?'),
+              SingleChildScrollView(
+                scrollDirection:Axis.horizontal,
+                child: Row(//-----> row use for searching area
+                  // for the second circle avatar and other property-----
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    CircleAvatar(
+                      // adding image in the circle avatar-------
+                      backgroundImage: AssetImage('assestimg/img 2.png'),
+                      //backgroundColor: Colors.lightBlueAccent,
+                      //child: Icon(Icons.account_circle,),//
                     ),
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(100),
-                        border: Border.all(
-                          color: Colors.grey,
-                        )),
-                  ),// conatiner for search area------
-                  Icon(
-                    Icons.photo,
-                    color: Colors.blue,
-                  ),
-                ], // second children brackets that is used for the second properties-----
+                    Container(
+                      height: 35,
+                      width: 280,
+                      child: Center(
+                        child: Text('Whats on your mind?'),
+                      ),
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(100),
+                          border: Border.all(
+                            color: Colors.grey,
+                          )),
+                    ),// conatiner for search area------
+                    Icon(
+                      Icons.photo,
+                      color: Colors.blue,
+                    ),
+                  ], // second children brackets that is used for the second properties-----
+                ),
               ),
               SizedBox(
                 height: 20,
@@ -431,23 +434,26 @@ class FbHomeScreen extends StatelessWidget {
               SizedBox(
                 height: 20,
               ),
-              Row(
-                // for the last icons and text in the last page-------
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  // for the last icons and text in the last page-------
 
-                children: [
-                  Icon(Icons.home),
-                  Text('Like'),
-                  SizedBox(
-                    width: 120,
-                  ),
-                  Icon(Icons.comment),
-                  Text('comment'),
-                  SizedBox(
-                    width: 120,
-                  ),
-                  Icon(Icons.share),
-                  Text('share'),
-                ],
+                  children: [
+                    Icon(Icons.home),
+                    Text('Like'),
+                    SizedBox(
+                      width: 110,
+                    ),
+                    Icon(Icons.comment),
+                    Text('comment'),
+                    SizedBox(
+                      width: 90,
+                    ),
+                    Icon(Icons.share),
+                    Text('share'),
+                  ],
+                ),
               ),
               SizedBox(
                 height: 50,
@@ -490,21 +496,24 @@ class FbHomeScreen extends StatelessWidget {
               SizedBox(
                 height: 20,
               ),
-              Row(
-                children: [
-                  Icon(Icons.home),
-                  Text('Like'),
-                  SizedBox(
-                    width: 120,
-                  ),
-                  Icon(Icons.comment),
-                  Text('comment'),
-                  SizedBox(
-                    width: 120,
-                  ),
-                  Icon(Icons.share),
-                  Text('share'),
-                ],
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: [
+                    Icon(Icons.home),
+                    Text('Like'),
+                    SizedBox(
+                      width: 120,
+                    ),
+                    Icon(Icons.comment),
+                    Text('comment'),
+                    SizedBox(
+                      width: 80,
+                    ),
+                    Icon(Icons.share),
+                    Text('share'),
+                  ],
+                ),
               )
             ],
 
