@@ -1,4 +1,5 @@
 import 'package:firstproject/Counter%20App.dart';
+import 'package:firstproject/Fb-splash-screen.dart';
 import 'package:firstproject/Fbsignup2.dart';
 import 'package:firstproject/Fbsignup3.dart';
 import 'package:firstproject/Swapping%20-%20variables.dart';
@@ -20,7 +21,7 @@ class myapp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:Swapping(),
+      home:Fbsplashscreen(),
     );
   }
 }

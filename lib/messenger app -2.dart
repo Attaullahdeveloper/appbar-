@@ -89,166 +89,172 @@ body:
         
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
-              child: Row(//--------------- row used for the starting id places-------------------
-                children: [
-                  SizedBox(width: 25,),
-                  Column(
-        
-                    children: [
-                      CircleAvatar(
-                        radius: 30,
-                        backgroundImage: AssetImage('assestimg/img8.jfif'),
-                      ),
-                      Text('Your id',
-                      style: TextStyle(
-                        color: Colors.white
-                      ),)
-                    ],
-                  ),
-                  SizedBox(width: 10,),
-                  Column(
-                    children: [
-                     CircleAvatar(
-                       backgroundImage: AssetImage('assestimg/img 2.png'),
-                       radius: 30,
-                     ) ,
-                      Text('Imran..',
+              child: InkWell(
+
+                child: Row(//--------------- row used for the starting id places-------------------
+                  children: [
+                    SizedBox(width: 25,),
+                    InkWell(
+
+                      child: Column(
+
+                        children: [
+                          CircleAvatar(
+                            radius: 30,
+                            backgroundImage: AssetImage('assestimg/img8.jfif'),
+                          ),
+                          Text('Your id',
                           style: TextStyle(
-                          color: Colors.white
-                      ),)
-                    ],
-                  ),
-                  SizedBox(width: 10,),
-                  Column(
-                    children: [
-                      CircleAvatar(
-                        backgroundImage: AssetImage('assestimg/car 1.jpg'),
-                        radius: 30,
+                            color: Colors.white
+                          ),)
+                        ],
                       ),
-                      Text('Khalid..',style: TextStyle(
-                          color: Colors.white
-                      ),)
-                    ],
-                  ),
-                  SizedBox(width: 10,),
-                  Column(
-                    children: [
-                      CircleAvatar(
-                        backgroundImage: AssetImage('assestimg/car 2.jfif'),
-                        radius: 30,
-                      ),
-                      Text('Ayan..',
-                        style: TextStyle(
-                          color: Colors.white
-                      ),)
-                    ],
-                  ),
-                  SizedBox(width: 10,),
-                  Column(
-                    children: [
-                      CircleAvatar(
-                        backgroundImage: AssetImage('assestimg/cart1.jpg'),
-                        radius: 30,
-                      ),
-                      Text('Atta..',
-                        style: TextStyle(
+                    ),
+                    SizedBox(width: 10,),
+                    Column(
+                      children: [
+                       CircleAvatar(
+                         backgroundImage: AssetImage('assestimg/img 2.png'),
+                         radius: 30,
+                       ) ,
+                        Text('Imran..',
+                            style: TextStyle(
                             color: Colors.white
                         ),)
-                    ],
-                  ),
-                  SizedBox(width: 10,),
-                  Column(
-                    children: [
-                      CircleAvatar(
-                        backgroundImage: AssetImage('assestimg/img 2.png'),
-                        radius: 30,
-                      ),
-                      Text('Farooq..',
-                        style: TextStyle(
+                      ],
+                    ),
+                    SizedBox(width: 10,),
+                    Column(
+                      children: [
+                        CircleAvatar(
+                          backgroundImage: AssetImage('assestimg/car 1.jpg'),
+                          radius: 30,
+                        ),
+                        Text('Khalid..',style: TextStyle(
                             color: Colors.white
                         ),)
-                    ],
-                  ),
-                  SizedBox(width: 10,),
-                  Column(
-                    children: [
-                      CircleAvatar(
-                        backgroundImage: AssetImage('assestimg/img5.jfif'),
-                        radius: 30,
-                      ),
-                      Text('Asif..',
-                        style: TextStyle(
+                      ],
+                    ),
+                    SizedBox(width: 10,),
+                    Column(
+                      children: [
+                        CircleAvatar(
+                          backgroundImage: AssetImage('assestimg/car 2.jfif'),
+                          radius: 30,
+                        ),
+                        Text('Ayan..',
+                          style: TextStyle(
                             color: Colors.white
                         ),)
-                    ],
-                  ),
-                  SizedBox(width: 10,),
-                  Column(
-                    children: [
-                      CircleAvatar(
-                        backgroundImage: AssetImage('assestimg/img6.jfif'),
-                        radius: 30,
-                      ),
-                      Text('Naeem..',
-                        style: TextStyle(
-                            color: Colors.white
-                        ),)
-                    ],
-                  ),
-                  SizedBox(width: 10,),
-                  Column(
-                    children: [
-                      CircleAvatar(
-                        backgroundImage: AssetImage('assestimg/img7.jfif'),
-                        radius: 30,
-                      ),
-                      Text('Waqas..',
-                        style: TextStyle(
-                            color: Colors.white
-                        ),)
-                    ],
-                  ),
-                  SizedBox(width: 10,),
-                  Column(
-                    children: [
-                      CircleAvatar(
-                        backgroundImage: AssetImage('assestimg/img8.jfif'),
-                        radius: 30,
-                      ),
-                      Text('Ahmad..',
-                        style: TextStyle(
-                            color: Colors.white
-                        ),)
-                    ],
-                  ),
-                  SizedBox(width: 10,),
-                  Column(
-                    children: [
-                      CircleAvatar(
-                        backgroundImage: AssetImage('assestimg/img9.jfif'),
-                        radius: 30,
-                      ),
-                      Text('Ali..',
-                        style: TextStyle(
-                            color: Colors.white
-                        ),)
-                    ],
-                  ),
-                  SizedBox(width: 10,),
-                  Column(
-                    children: [
-                      CircleAvatar(
-                        backgroundImage: AssetImage('assestimg/img10.jfif'),
-                        radius: 30,
-                      ),
-                      Text('Amir..',
-                        style: TextStyle(
-                            color: Colors.white
-                        ),)
-                    ],
-                  ),
-        
-                ],
+                      ],
+                    ),
+                    SizedBox(width: 10,),
+                    Column(
+                      children: [
+                        CircleAvatar(
+                          backgroundImage: AssetImage('assestimg/cart1.jpg'),
+                          radius: 30,
+                        ),
+                        Text('Atta..',
+                          style: TextStyle(
+                              color: Colors.white
+                          ),)
+                      ],
+                    ),
+                    SizedBox(width: 10,),
+                    Column(
+                      children: [
+                        CircleAvatar(
+                          backgroundImage: AssetImage('assestimg/img 2.png'),
+                          radius: 30,
+                        ),
+                        Text('Farooq..',
+                          style: TextStyle(
+                              color: Colors.white
+                          ),)
+                      ],
+                    ),
+                    SizedBox(width: 10,),
+                    Column(
+                      children: [
+                        CircleAvatar(
+                          backgroundImage: AssetImage('assestimg/img5.jfif'),
+                          radius: 30,
+                        ),
+                        Text('Asif..',
+                          style: TextStyle(
+                              color: Colors.white
+                          ),)
+                      ],
+                    ),
+                    SizedBox(width: 10,),
+                    Column(
+                      children: [
+                        CircleAvatar(
+                          backgroundImage: AssetImage('assestimg/img6.jfif'),
+                          radius: 30,
+                        ),
+                        Text('Naeem..',
+                          style: TextStyle(
+                              color: Colors.white
+                          ),)
+                      ],
+                    ),
+                    SizedBox(width: 10,),
+                    Column(
+                      children: [
+                        CircleAvatar(
+                          backgroundImage: AssetImage('assestimg/img7.jfif'),
+                          radius: 30,
+                        ),
+                        Text('Waqas..',
+                          style: TextStyle(
+                              color: Colors.white
+                          ),)
+                      ],
+                    ),
+                    SizedBox(width: 10,),
+                    Column(
+                      children: [
+                        CircleAvatar(
+                          backgroundImage: AssetImage('assestimg/img8.jfif'),
+                          radius: 30,
+                        ),
+                        Text('Ahmad..',
+                          style: TextStyle(
+                              color: Colors.white
+                          ),)
+                      ],
+                    ),
+                    SizedBox(width: 10,),
+                    Column(
+                      children: [
+                        CircleAvatar(
+                          backgroundImage: AssetImage('assestimg/img9.jfif'),
+                          radius: 30,
+                        ),
+                        Text('Ali..',
+                          style: TextStyle(
+                              color: Colors.white
+                          ),)
+                      ],
+                    ),
+                    SizedBox(width: 10,),
+                    Column(
+                      children: [
+                        CircleAvatar(
+                          backgroundImage: AssetImage('assestimg/img10.jfif'),
+                          radius: 30,
+                        ),
+                        Text('Amir..',
+                          style: TextStyle(
+                              color: Colors.white
+                          ),)
+                      ],
+                    ),
+
+                  ],
+                ),
               ),
             ),
         SizedBox(height: 20,),
