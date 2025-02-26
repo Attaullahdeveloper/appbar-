@@ -10,6 +10,7 @@ import 'package:firstproject/fb-homescreen.dart';
 import 'package:firstproject/fb-signup%20page.dart';
 import 'package:firstproject/messenger%20app%20-2.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 void main()
 {
   runApp(myapp());
@@ -19,7 +20,7 @@ class myapp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(// short code for navigation from one page to another--------------
       debugShowCheckedModeBanner: false,
       home:Fbsplashscreen(),
     );

@@ -70,17 +70,20 @@ body:
                   color: Colors.grey,
                  // color: Color(0xFFF5F5F5),// for own color custom-------
                 ),
-                child: Row(
-                  children: [
-                    SizedBox(width: 15,),
-                    Icon(Icons.search,),
+                child: InkWell(
+                  onTap: (){},
+                  child: Row(
+                    children: [
+                      SizedBox(width: 15,),
+                      Icon(Icons.search,),
 
-                    SizedBox(width: 15,),
-                    Text('Search',
-                    style: TextStyle(
+                      SizedBox(width: 15,),
+                      Text('Search',
+                      style: TextStyle(
 
-                    ),)
-                  ],
+                      ),)
+                    ],
+                  ),
                 ),
               ),
             ),
@@ -95,7 +98,7 @@ body:
                   children: [
                     SizedBox(width: 25,),
                     InkWell(
-
+                         onTap: (){},
                       child: Column(
 
                         children: [
@@ -111,55 +114,67 @@ body:
                       ),
                     ),
                     SizedBox(width: 10,),
-                    Column(
-                      children: [
-                       CircleAvatar(
-                         backgroundImage: AssetImage('assestimg/img 2.png'),
-                         radius: 30,
-                       ) ,
-                        Text('Imran..',
-                            style: TextStyle(
-                            color: Colors.white
-                        ),)
-                      ],
-                    ),
-                    SizedBox(width: 10,),
-                    Column(
-                      children: [
-                        CircleAvatar(
-                          backgroundImage: AssetImage('assestimg/car 1.jpg'),
-                          radius: 30,
-                        ),
-                        Text('Khalid..',style: TextStyle(
-                            color: Colors.white
-                        ),)
-                      ],
-                    ),
-                    SizedBox(width: 10,),
-                    Column(
-                      children: [
-                        CircleAvatar(
-                          backgroundImage: AssetImage('assestimg/car 2.jfif'),
-                          radius: 30,
-                        ),
-                        Text('Ayan..',
-                          style: TextStyle(
-                            color: Colors.white
-                        ),)
-                      ],
-                    ),
-                    SizedBox(width: 10,),
-                    Column(
-                      children: [
-                        CircleAvatar(
-                          backgroundImage: AssetImage('assestimg/cart1.jpg'),
-                          radius: 30,
-                        ),
-                        Text('Atta..',
-                          style: TextStyle(
+                    InkWell(
+                      onTap: (){},
+                      child: Column(
+                        children: [
+                         CircleAvatar(
+                           backgroundImage: AssetImage('assestimg/img 2.png'),
+                           radius: 30,
+                         ) ,
+                          Text('Imran..',
+                              style: TextStyle(
                               color: Colors.white
                           ),)
-                      ],
+                        ],
+                      ),
+                    ),
+                    SizedBox(width: 10,),
+                    InkWell(
+                      onTap: (){},
+                      child: Column(
+                        children: [
+                          CircleAvatar(
+                            backgroundImage: AssetImage('assestimg/car 1.jpg'),
+                            radius: 30,
+                          ),
+                          Text('Khalid..',style: TextStyle(
+                              color: Colors.white
+                          ),)
+                        ],
+                      ),
+                    ),
+                    SizedBox(width: 10,),
+                    InkWell(
+                      onTap: (){},
+                      child: Column(
+                        children: [
+                          CircleAvatar(
+                            backgroundImage: AssetImage('assestimg/car 2.jfif'),
+                            radius: 30,
+                          ),
+                          Text('Ayan..',
+                            style: TextStyle(
+                              color: Colors.white
+                          ),)
+                        ],
+                      ),
+                    ),
+                    SizedBox(width: 10,),
+                    InkWell(
+                      onTap: (){},
+                      child: Column(
+                        children: [
+                          CircleAvatar(
+                            backgroundImage: AssetImage('assestimg/cart1.jpg'),
+                            radius: 30,
+                          ),
+                          Text('Atta..',
+                            style: TextStyle(
+                                color: Colors.white
+                            ),)
+                        ],
+                      ),
                     ),
                     SizedBox(width: 10,),
                     Column(
@@ -261,22 +276,25 @@ body:
                Row(
                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                Container(//---------for the HOME--------
-                  height: 30,
-                  width: 150,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(100),
-                    color: Colors.grey,
-                    //color: Color(0xFFF5F5F5),
-                  ),
-                  child: Center(
-                    child: Text('HOME',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold
-                    ),),
-                  ),
+                InkWell(
+                  onTap: (){},
+                  child: Container(//---------for the HOME--------
+                    height: 30,
+                    width: 150,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(100),
+                      color: Colors.grey,
+                      //color: Color(0xFFF5F5F5),
+                    ),
+                    child: Center(
+                      child: Text('HOME',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold
+                      ),),
+                    ),
 
+                  ),
                 ),
                   Container(//-----------------for the CHANNELS------------
                     height: 30,
@@ -285,14 +303,17 @@ body:
                       borderRadius: BorderRadius.circular(100),
                       
                     ),
-                    child: Container(
-                      child:Center(
-                      child: Text('CHANNELS',
-                        style: TextStyle(
-                            color: Colors.white,
-                          fontWeight: FontWeight.bold
-                        ),),
-                    ),
+                    child: InkWell(
+                      onTap: (){},
+                      child: Container(
+                        child:Center(
+                        child: Text('CHANNELS',
+                          style: TextStyle(
+                              color: Colors.white,
+                            fontWeight: FontWeight.bold
+                          ),),
+                      ),
+                      ),
                     ),
                   ),
                 ],
@@ -302,27 +323,30 @@ body:
                child: Column(// -----------used fot the below id place-----------------
                   children: [
                    //---------------------------------------------------------------------------------//              
-                  Row(
-                    children: [
-                      CircleAvatar(
-                        backgroundImage: AssetImage('assestimg/img5.jfif'),
-                        radius: 30,
-                      ),
-                      SizedBox(width: 10,),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text('Bhai',
-                            style: TextStyle(
+                  InkWell(
+                    onTap: (){},
+                    child: Row(
+                      children: [
+                        CircleAvatar(
+                          backgroundImage: AssetImage('assestimg/img5.jfif'),
+                          radius: 30,
+                        ),
+                        SizedBox(width: 10,),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text('Bhai',
+                              style: TextStyle(
+                                  color: Colors.white
+                              ),),
+                            Text('hi lets do something here....',style: TextStyle(
                                 color: Colors.white
-                            ),),
-                          Text('hi lets do something here....',style: TextStyle(
-                              color: Colors.white
-                          ),)
-                        ],
-                      ),
+                            ),)
+                          ],
+                        ),
 
-                                    ],
+                                      ],
+                    ),
                   ),
                     SizedBox(height: 8,),
                     Row(
