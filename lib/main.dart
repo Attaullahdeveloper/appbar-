@@ -9,6 +9,8 @@ import 'package:firstproject/fb%20-%20sign%20up%20screen.dart';
 import 'package:firstproject/fb-homescreen.dart';
 import 'package:firstproject/fb-signup%20page.dart';
 import 'package:firstproject/messenger%20app%20-2.dart';
+import 'package:firstproject/model-class.dart';
+import 'package:firstproject/whatsappscreen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 void main()
@@ -22,7 +24,7 @@ class myapp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(// short code for navigation from one page to another--------------
       debugShowCheckedModeBanner: false,
-      home:Fbsplashscreen(),
+      home: FbsignupScreen()//WhatsappScreen(),
     );
   }
 }
