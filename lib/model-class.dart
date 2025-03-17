@@ -34,7 +34,7 @@ class ModelClassWhatsapp extends StatelessWidget {
         return ListTile(
           onTap: (){
 
-            Get.to(()=>ChatViewNew(name: listModel[index].name.toString(), path: listModel[index].img.toString()));
+            Get.to(()=>Chatscreen(name: listModel[index].name.toString(), idimage: listModel[index].img.toString()));
           },
           leading: CircleAvatar(backgroundImage: AssetImage(listModel[index].img.toString()),),
         title: Text(listModel[index].name.toString()),

@@ -54,7 +54,7 @@ class WhatsappScreen extends StatelessWidget {
     '9am',
     '9am',
     '9am',
-    '9am'
+
   ];
   List<String> messages = [
     '12',
@@ -65,7 +65,8 @@ class WhatsappScreen extends StatelessWidget {
     '34',
     '45',
     '45',
-    '45' '45',
+    '45',
+    '45',
     '45',
     '45',
     '45',
@@ -74,9 +75,20 @@ class WhatsappScreen extends StatelessWidget {
 
   List<String> image = [
     'assestimg/car 1.jpg',
-    'assestimg/car 2.png',
+    'assestimg/car 2.jfif',
     'assestimg/cart1.jpg',
-    'assestimg/img 2.png'
+    'assestimg/img 2.png',
+    'assestimg/img5.jfif',
+    'assesrimg/img6.jfif',
+    'assesrimg/img7.jfif',
+    'assesrimg/img8.jfif',
+    'assesrimg/img9.jfif',
+    'assesrimg/img10.jfif',
+    'assesrimg/img11.png',
+    'assesrimg/img13.jfif',
+    'assesrimg/img14.jfif',
+    'assesrimg/img15.jfif',
+
   ];
 
   @override
@@ -112,13 +124,11 @@ class WhatsappScreen extends StatelessWidget {
           itemBuilder: (context, index) {
             return ListTile(
               onTap: (){
-Get.to(()=>ChatViewNew(
-    name: Username[index],
-path: image[index],
-) );
+            Get.to(()=>Chatscreen(name: Username[index], idimage: image[index]));
                // Navigator.push(context, )
               },
               leading: CircleAvatar(
+                backgroundImage: AssetImage(image[index]),
                 radius: 25,
               ),
               title: Text(

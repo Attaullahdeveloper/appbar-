@@ -24,7 +24,7 @@ class myapp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(// short code for navigation from one page to another--------------
       debugShowCheckedModeBanner: false,
-      home: FbsignupScreen()//WhatsappScreen(),
+      home: Fbsignup2()//WhatsappScreen(),
     );
   }
 }

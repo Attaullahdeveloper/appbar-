@@ -56,10 +56,7 @@ import 'package:flutter/material.dart';
             SizedBox(height: 30,),
             Container(
               height: 48,
-              width: MediaQuery
-                  .of(context)
-                  .size
-                  .width * 0.9,
+              width: MediaQuery.of(context).size.width * 0.9,
               child: Center(
                 child: TextButton(onPressed: () {
                   // for the navigation-------------
